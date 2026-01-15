@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --gradient-color: linear-gradient(hsl(237, 73%, 79%), hsl(238, 63%, 64%));
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.rs-toggle-track{
+    background: var(--gradient-color);
+}
+
+.rs-toggle-track:hover{
+    background: var(--gradient-color);
+    opacity: 70%;
+}
+
+.rs-toggle[data-checked=true] .rs-toggle-track{
+  background: var(--gradient-color);
+}
+
+.rs-toggle[data-checked=false] .rs-toggle-track{
+  background: var(--gradient-color);
+}
+
+
+
+
+
+
