@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --gradient-color: linear-gradient(hsl(230, 22%, 74%));
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.rs-toggle-track {
+    background: var(--gradient-color);
+}
+
+
+.rs-toggle[data-checked=true] .rs-toggle-track {
+    background: var(--gradient-color);
+}
+
+.rs-toggle[data-checked=false] .rs-toggle-track {
+    background: linear-gradient(hsl(210, 79%, 56%), hsl(146, 68%, 55%));
+}
+
+html.dark .rs-toggle-track::after {
+    background-color: hsl(228, 28%, 20%) !important;
+}
